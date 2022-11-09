@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML</title>
+</head>
+<body>
+    <h1>Tiêu đề mục 1</h1>
+    <h2>Tiêu đề mục 2</h2>
+    <h3>Tiêu đề mục 3</h3>
+    <p>Một đoạn văn bản</p>
+    <p><b>Chữ in đậm</b></p>
+    <p><strong>Chữ in đậm</strong></p>
+    <p>Chữ<big>lớn hơn</big> và chữ <small>nhỏ hơn</small></p>
+    <p><i>Chữ in nghiêng</i></p>
+    <p><em>Chữ in nghiêng</em></p>
+    <p><u>Chữ được gạch chân</u></p>
+    <p><mark>Chữ có màu nền</mark></p>
+    <p><ins>Văn bản được chèn vào</ins></p>
+    <p><del>Văn bản bị xóa</del></p>
+    <p>Phần tạo <sup>chỉ số trên</sup> và <sub>chỉ số dưới</sub></p>
+    
+    <table style="border: 5px solid yellow; width: 500; height: 300" cellpadding="5" cellspacing="5">
+        <tr>
+            <th style="background-color: blue;">Tiêu đề 1</th>
+            <th style="background-color: blue;">Tiêu đề 2</th>
+        </tr>
+        <tr>
+            <td style="background-color: aqua;">Ô 1</td>
+            <td style="background-color: aqua;">Ô 2</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: blueviolet;">2 ô gộp thành 1 hàng </td>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: green;">2 ô gộp thành 1 cột</td>
+            <td style="background-color: grey;">Ô 3</td>
+        </tr>
+        <tr>
+            <td style="background-color: grey;">Ô 4</td>
+        </tr>
+    </table>
+
+    <!-- Danh sách sắp xếp  -->
+    <ol>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <p>Sử dụng thuộc tính type</p>
+    <ol type="1">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <ol type="A">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <ol type="a">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <ol type="I">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <ol type="i">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <p>Sử dụng thuộc tính reversed</p>
+    <ol reversed >
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <p>Sử dụng thuộc tính start</p>
+    <ol type="1" start="2">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <ol type="A" start="3">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ol>
+    <!-- Danh sách không có thứ tự -->
+    <ul>
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+    <p>Sử dụng thuộc tính disc</p>
+    <ul type="disc">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+    <p>Sử dụng thuộc tính circle</p>
+    <ul type="circle">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+    <p>Sử dụng thuộc tính square</p>
+    <ul type="square">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+    <p>Sử dụng thuộc tính none</p>
+    <ul type="none">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+    <!-- Form  -->
+    <form>
+        <h3>Input, label và button</h3>
+        <label for="fullname">Họ và tên</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Họ và tên">
+        <button type="button" name="button">Click</button>
+        <h3>Thẻ select, option và optgroup</h3>
+        <select>
+            <optgroup label="Tên">
+                <option>Dũng</option>
+                <option>Nguyễn</option>
+            </optgroup>
+        </select>
+        <h3>Thẻ textarea</h3>
+        <textarea>Nhập thông tin</textarea>
+        <h3>Thẻ fieldset và legend</h3>
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            Họ tên: <input type="text"></br>
+            Tuổi: <input type="number">
+        </fieldset>
+        <h3>Thẻ datalist</h3>
+        <input list="language" name="language" placeholder="Chọn ngôn ngữ">
+        <datalist id="language">
+            <option value="Tiếng Việt"></option>
+            <option value="Tiếng Anh"></option>
+        </datalist>
+    </form></br>
+    
+    <!-- Input Form  -->
+    <form>
+        <label for="fullname">Họ và tên</label>
+        <input type="text" required name="fullname" id="fullname" placeholder="Họ và tên">
+        <label for="fullname">Họ và tên</label>
+        <input type="text" readonly name="fullname" id="fullname" placeholder="Họ và tên">
+
+        <p>Chọn giới tính</p>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Nam</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Nữ</label>
+
+        <p>Chọn quê quán</p>
+        <input type="checkbox" name="Hanoi" id="Hanoi">
+        <label for="Hanoi">TP Hà Nội</label> 
+        <input type="checkbox" name="Hcm" id="Hcm">
+        <label for="Hcm">TP Hồ Chí Minh</label></br>
+
+        <label for="color">Chọn màu</label>
+        <input type="color" id="color" value="red"></br>
+
+        <label for="file">Tải file lên</label>
+        <input type="file" id="file">
+
+        <input type="button" value="Ấn vào đây"></br>
+
+        <input type="submit" value="Gửi">
+        <input type="reset" value="Hủy">
+    </form>
+
+    <!-- Image -->
+    <p>Ảnh nằm trong thư mục</p>
+    <img src="img/anh.jpg" alt="Thông báo khi không thấy ảnh" width="100px" height="auto">
+    <p>Ảnh nằm trên website</p>
+    <img src="https://cdn.tgdd.vn/Files/2019/07/25/1181745/chup-anh-hieu-ung-bokeh-la-gi-cach-chup-anh-bokeh-don-gian-bang-may-anh--2.jpg" alt="Thông báo khi không thấy ảnh" width="100px" height="auto">
+    <p>Ảnh được gắn link</p>
+    <a href="https://www.youtube.com/"><img src="img/anh.jpg" width="100px" height="auto"></a></br></br>
+
+    <!-- Video -->
+    <video width="300px" height="200px" autoplay controls>
+        <source type="video/mp4" src="img/mov_bbb.mp4">
+        Nếu trình duyệt không hỗ trợ sẽ hiện thông báo này
+    </video></br></br>
+
+    <!-- Audio -->
+    <audio controls>
+        <source src="file audio" type="audio/mpeg">
+    </audio></br></br>
+    
+    <!-- Media -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6KCff8T5tR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
